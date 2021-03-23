@@ -22,13 +22,13 @@ export const ProductList = () => {
 
 const dispatch = useDispatch();
 const products = useSelector((store) => store.productList.products);
-console.log(products);
+//console.log(products);
 
 useEffect(() => {
   dispatch(getProducts());
 }, [dispatch]);
 
-return <section className = "game-list">
+return <section className = "product-list">
    {products.map(product => <ProductCard key={product.id} 
    {...product}
    />)}

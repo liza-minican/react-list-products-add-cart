@@ -10,10 +10,12 @@ export const ProductCard = ({name,description,price,h2,id}) => {
      <p  className = "product-description">  
      {h2}       
      </p>
+     <div className = "flex-wrap-buy">
      <p className = "product-price">{price}</p>
+     <button className = "buy-button">Add to card</button>
+     </div>
      </div>
  </section> 
  </Link>
  )
-
 }  
