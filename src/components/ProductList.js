@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { ProductCard } from "./ProductCard"
 
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 
-import { productList } from "../reducers/productList";
 import { getProducts } from "../reducers/productList";
 
 

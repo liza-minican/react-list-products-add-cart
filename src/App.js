@@ -6,6 +6,8 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import { ProductDetails } from 'pages/ProductDetails'
 import { ProductList } from "./components/ProductList"
+import { Navbar } from "./components/Navbar"
+import { Cart } from "./components/Cart"
 
 
 import { cart } from "./reducers/cart";
@@ -22,9 +24,13 @@ export const App = () => {
   return (
     <Provider store={store}>
        <BrowserRouter>
+       <Navbar />
     <Switch>
       <Route path="/" exact>
       <ProductList/>
+      </Route>
+      <Route path="/cart" exact>
+      <Cart/>
       </Route>
       <Route path="/products/:id" exact>
         <ProductDetails/>
