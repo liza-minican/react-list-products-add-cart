@@ -21,7 +21,7 @@ export const ProductList = () => {
 
 const dispatch = useDispatch();
 const products = useSelector((store) => store.productList.products);
-//console.log(products);
+console.log(products);
 
 useEffect(() => {
   dispatch(getProducts());
